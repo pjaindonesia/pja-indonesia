@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #DBB884;
+  --color-brand-green: #1A997F;
+  --color-brand-dark: #1F1F1F;
+}
+
+@layer utilities {
+  .bg-pattern-green {
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 0L40 80M0 40L80 40M20 20L60 60M20 60L60 20' stroke='white' stroke-width='2' stroke-opacity='0.2' fill='none'/%3E%3C/svg%3E");
+    background-size: 40px 40px;
+  }
+  
+  .bg-pattern-dark {
+    background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='20' stroke='rgba(255,255,255,0.05)' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+    background-size: 60px 60px;
+    background-position: center;
+  }
+}
+
+body {
+  background-color: #ffffff;
+  color: #171717;
+  font-family: var(--font-sans), system-ui, sans-serif;
+  overflow-x: hidden;
+}
