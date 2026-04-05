@@ -24,7 +24,7 @@ export default function Home() {
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
           </p>
 
-          <Link href="/brands" className="inline-block text-center relative overflow-hidden group bg-[#DBB884] text-white text-[10px] font-bold px-8 py-3.5 rounded-full uppercase transition-all duration-500 shadow-sm hover:shadow-md hover:scale-105 active:scale-95">
+          <Link href="/brands" className="relative overflow-hidden group w-full sm:w-[206px] h-[39px] flex items-center justify-center bg-[#DBB884] backdrop-blur-[17.5px] text-white text-[10px] font-bold uppercase rounded-[99px] transition-all duration-500 shadow-[inset_0px_4px_4px_#B2B2B2] hover:scale-105 active:scale-95">
             <div
               className="absolute inset-0 opacity-20 md:opacity-0 group-hover:opacity-25 group-active:opacity-30 transition-opacity duration-500"
               style={{
@@ -33,7 +33,7 @@ export default function Home() {
               }}
             />
             <div className="absolute inset-0 bg-black/10 opacity-100 md:opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <span className="relative z-10 tracking-[0.2em] md:tracking-widest group-hover:tracking-[0.25em] transition-all duration-500 block w-full">Read More</span>
+            <span className="relative z-10 tracking-[0.2em] md:tracking-widest group-hover:tracking-[0.25em] transition-all duration-500 block w-full text-center">Read More</span>
           </Link>
         </div>
 
@@ -71,12 +71,12 @@ export default function Home() {
 
           <div className="flex flex-wrap items-center justify-between gap-y-10 gap-x-4 w-full">
             {[
-              { src: '/logo-projects/pjaindonesia-pertamina.png',    alt: 'Logo Pertamina – Mitra PLC & Valve Automation PJA Indonesia',   h: 'h-7 md:h-9'  },
-              { src: '/logo-projects/pjaindonesia-gojek.png',        alt: 'Logo Gojek – Mitra Data Center Infrastructure PJA Indonesia',    h: 'h-6 md:h-8'  },
-              { src: '/logo-projects/pjaindonesia-indonesiapower.png',alt: 'Logo Indonesia Power – Mitra SCADA & PLC PJA Indonesia',        h: 'h-7 md:h-9'  },
-              { src: '/logo-projects/pjaindonesia-kai.png',          alt: 'Logo KAI – Mitra Railway Signaling System PJA Indonesia',        h: 'h-5 md:h-7'  },
-              { src: '/logo-projects/pjaindonesia-chandraasri.png',  alt: 'Logo Chandra Asri – Mitra Safety Instrumented System PJA Indonesia', h: 'h-8 md:h-10' },
-              { src: '/logo-projects/pjaindonesia-telkom.png',       alt: 'Logo Telkom Indonesia – Mitra BTS Power System PJA Indonesia',   h: 'h-7 md:h-9'  },
+              { src: '/logo-projects/pjaindonesia-pertamina.png', alt: 'Logo Pertamina – Mitra PLC & Valve Automation PJA Indonesia', h: 'h-7 md:h-9' },
+              { src: '/logo-projects/pjaindonesia-gojek.png', alt: 'Logo Gojek – Mitra Data Center Infrastructure PJA Indonesia', h: 'h-6 md:h-8' },
+              { src: '/logo-projects/pjaindonesia-indonesiapower.png', alt: 'Logo Indonesia Power – Mitra SCADA & PLC PJA Indonesia', h: 'h-7 md:h-9' },
+              { src: '/logo-projects/pjaindonesia-kai.png', alt: 'Logo KAI – Mitra Railway Signaling System PJA Indonesia', h: 'h-5 md:h-7' },
+              { src: '/logo-projects/pjaindonesia-chandraasri.png', alt: 'Logo Chandra Asri – Mitra Safety Instrumented System PJA Indonesia', h: 'h-8 md:h-10' },
+              { src: '/logo-projects/pjaindonesia-telkom.png', alt: 'Logo Telkom Indonesia – Mitra BTS Power System PJA Indonesia', h: 'h-7 md:h-9' },
             ].map((logo, i, arr) => (
               <div key={logo.src} className="flex items-center gap-4 md:gap-6">
                 <div className="group/logo flex flex-col items-center gap-2 cursor-default">
@@ -91,7 +91,7 @@ export default function Home() {
                 {i < arr.length - 1 && (
                   <svg viewBox="0 0 12 12" className="w-3 h-3 opacity-30 flex-shrink-0 hidden sm:block" xmlns="http://www.w3.org/2000/svg">
                     <rect x="2" y="2" width="8" height="8" transform="rotate(45 6 6)" fill="#DBB884" />
-                    <rect x="3.5" y="3.5" width="5" height="5" transform="rotate(45 6 6)" fill="none" stroke="white" strokeWidth="0.8"/>
+                    <rect x="3.5" y="3.5" width="5" height="5" transform="rotate(45 6 6)" fill="none" stroke="white" strokeWidth="0.8" />
                   </svg>
                 )}
               </div>
@@ -113,7 +113,7 @@ export default function Home() {
               <div className="h-px bg-neutral-300 w-full max-w-[200px]"></div>
             </div>
             <h2 className="text-[28px] md:text-3xl font-bold leading-[1.2] text-neutral-900 tracking-tight">
-              Whatever your brands need, we're ready to deliver.<br/>
+              Whatever your brands need, we're ready to deliver.<br />
               Consult with our team now.
             </h2>
           </div>

@@ -20,7 +20,7 @@ export default function Footer() {
             <h2 className="text-[28px] sm:text-[38px] font-bold leading-[1.1] mb-8 text-white tracking-tight">
               Let's build something<br />awesome.
             </h2>
-            <button className="relative overflow-hidden group border border-[#DBB884] text-[#DBB884] text-[9px] font-bold px-8 py-2.5 rounded-full tracking-[0.2em] uppercase hover:bg-[#DBB884] hover:text-white transition-all duration-500 hover:scale-105">
+            <button className="relative overflow-hidden group w-full sm:w-[206px] h-[39px] flex items-center justify-center border border-[#DBB884] text-[#DBB884] bg-transparent backdrop-blur-[17.5px] text-[9px] font-bold rounded-[99px] tracking-[0.2em] uppercase hover:bg-[#DBB884] hover:text-white transition-all duration-500 hover:scale-105 shadow-[inset_0px_4px_4px_#B2B2B2]">
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-25 transition-opacity duration-500"
                 style={{
@@ -29,7 +29,7 @@ export default function Footer() {
                 }}
               />
               <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <span className="relative z-10 group-hover:tracking-[0.3em] transition-all duration-500">Talk To Us</span>
+              <span className="relative z-10 group-hover:tracking-[0.3em] transition-all duration-500 block w-full text-center">Talk To Us</span>
             </button>
           </div>
           <div className="mt-16 lg:mt-0 flex items-center gap-3">
@@ -49,7 +49,7 @@ export default function Footer() {
               <li><Link href="/" className="hover:text-[#DBB884] transition-colors">Home</Link></li>
               <li><Link href="/brands" className="hover:text-[#DBB884] transition-colors">Brands</Link></li>
               <li><Link href="/projects" className="hover:text-[#DBB884] transition-colors">Projects</Link></li>
-              <li><Link href="#" className="hover:text-[#DBB884] transition-colors">Conctacts</Link></li>
+              <li><Link href="/contacts" className="hover:text-[#DBB884] transition-colors">Contacts</Link></li>
               <li><Link href="/about" className="hover:text-[#DBB884] transition-colors">About us</Link></li>
             </ul>
           </div>

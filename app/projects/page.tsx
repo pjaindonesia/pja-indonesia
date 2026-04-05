@@ -57,8 +57,15 @@ export default function ProjectsIndexPage() {
                   <h3 className="text-3xl font-bold text-neutral-900 tracking-tight mb-2 group-hover:translate-x-2 transition-transform duration-500">{project.title}</h3>
                   <p className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">{project.category}</p>
                 </div>
-                <div className="w-12 h-12 border border-neutral-300 rounded-full flex items-center justify-center text-neutral-400 group-hover:border-[#DBB884] group-hover:bg-[#DBB884] group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] flex-shrink-0">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <div className="relative overflow-hidden w-12 h-12 border border-neutral-300 rounded-full flex items-center justify-center text-neutral-400 group-hover:border-[#DBB884] group-hover:bg-[#DBB884] group-hover:text-white transition-all duration-500 transform group-hover:rotate-[-45deg] flex-shrink-0">
+                  <div
+                    className="absolute inset-0 opacity-0 group-hover:opacity-40 transition-opacity duration-500 pointer-events-none"
+                    style={{
+                      backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"40\" height=\"40\" viewBox=\"0 0 80 80\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Ccircle cx=\"0\" cy=\"0\" r=\"40\" stroke=\"%23ffffff\" stroke-width=\"4\" fill=\"none\"%2F%3E%3Ccircle cx=\"40\" cy=\"40\" r=\"40\" stroke=\"%23ffffff\" stroke-width=\"4\" fill=\"none\"%2F%3E%3Ccircle cx=\"80\" cy=\"0\" r=\"40\" stroke=\"%23ffffff\" stroke-width=\"4\" fill=\"none\"%2F%3E%3Ccircle cx=\"0\" cy=\"80\" r=\"40\" stroke=\"%23ffffff\" stroke-width=\"4\" fill=\"none\"%2F%3E%3Ccircle cx=\"80\" cy=\"80\" r=\"40\" stroke=\"%23ffffff\" stroke-width=\"4\" fill=\"none\"%2F%3E%3C/svg%3E')",
+                      backgroundSize: "28px 28px"
+                    }}
+                  />
+                  <svg className="relative z-10" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>
                     <polyline points="12 5 19 12 12 19"></polyline>
                   </svg>

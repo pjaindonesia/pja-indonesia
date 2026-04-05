@@ -120,8 +120,15 @@ export default function ProjectsCarousel() {
                 aria-label={`Lihat detail proyek ${project.clientName}`}
               >
                 View Detail
-                <div className="w-8 h-8 rounded-full border border-neutral-300 flex items-center justify-center group-hover/btn:border-[#DBB884] group-hover/btn:bg-[#DBB884] group-hover/btn:text-white transition-all transform group-hover/btn:rotate-[-45deg] duration-300">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <div className="relative overflow-hidden w-8 h-8 rounded-full border border-neutral-300 flex items-center justify-center group-hover/btn:border-[#DBB884] group-hover/btn:bg-[#DBB884] group-hover/btn:text-white transition-all transform group-hover/btn:rotate-[-45deg] duration-300">
+                  <div
+                    className="absolute inset-0 opacity-0 group-hover/btn:opacity-40 transition-opacity duration-300 pointer-events-none"
+                    style={{
+                      backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"40\" height=\"40\" viewBox=\"0 0 80 80\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Ccircle cx=\"0\" cy=\"0\" r=\"40\" stroke=\"%23ffffff\" stroke-width=\"4\" fill=\"none\"%2F%3E%3Ccircle cx=\"40\" cy=\"40\" r=\"40\" stroke=\"%23ffffff\" stroke-width=\"4\" fill=\"none\"%2F%3E%3Ccircle cx=\"80\" cy=\"0\" r=\"40\" stroke=\"%23ffffff\" stroke-width=\"4\" fill=\"none\"%2F%3E%3Ccircle cx=\"0\" cy=\"80\" r=\"40\" stroke=\"%23ffffff\" stroke-width=\"4\" fill=\"none\"%2F%3E%3Ccircle cx=\"80\" cy=\"80\" r=\"40\" stroke=\"%23ffffff\" stroke-width=\"4\" fill=\"none\"%2F%3E%3C/svg%3E')",
+                      backgroundSize: "24px 24px"
+                    }}
+                  />
+                  <svg className="relative z-10" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
                   </svg>
                 </div>
